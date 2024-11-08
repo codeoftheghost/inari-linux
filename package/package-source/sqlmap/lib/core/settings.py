@@ -20,8 +20,8 @@ from thirdparty import six
 
 # sqlmap version (<major>.<minor>.<month>.<monthly commit>)
 VERSION = "1.8.11.0"
-TYPE = "dev" if VERSION.count('.') > 2 and VERSION.split('.')[-1] != '0' else "stable"
-TYPE_COLORS = {"dev": 33, "stable": 90, "pip": 34}
+TYPE = "Inari Linux Version"
+TYPE_COLORS = {"dev": 33, "stable": 90, "pip": 34, "Inari Linux Version": 31}
 VERSION_STRING = "sqlmap/%s#%s" % ('.'.join(VERSION.split('.')[:-1]) if VERSION.count('.') > 2 and VERSION.split('.')[-1] == '0' else VERSION, TYPE)
 DESCRIPTION = "automatic SQL injection and database takeover tool"
 SITE = "https://sqlmap.org"

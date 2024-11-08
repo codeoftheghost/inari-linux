@@ -787,9 +787,6 @@ def cmdLineParser(argv=None):
         miscellaneous.add_argument("--unstable", dest="unstable", action="store_true",
             help="Adjust options for unstable connections")
 
-        miscellaneous.add_argument("--update", dest="updateAll", action="store_true",
-            help="Update sqlmap")
-
         miscellaneous.add_argument("--wizard", dest="wizard", action="store_true",
             help="Simple wizard interface for beginner users")
 
@@ -1098,8 +1095,8 @@ def cmdLineParser(argv=None):
         else:
             args.stdinPipe = None
 
-        if not any((args.direct, args.url, args.logFile, args.bulkFile, args.googleDork, args.configFile, args.requestFile, args.updateAll, args.smokeTest, args.vulnTest, args.wizard, args.dependencies, args.purge, args.listTampers, args.hashFile, args.stdinPipe)):
-            errMsg = "missing a mandatory option (-d, -u, -l, -m, -r, -g, -c, --wizard, --shell, --update, --purge, --list-tampers or --dependencies). "
+        if not any((args.direct, args.url, args.logFile, args.bulkFile, args.googleDork, args.configFile, args.requestFile,  args.smokeTest, args.vulnTest, args.wizard, args.dependencies, args.purge, args.listTampers, args.hashFile, args.stdinPipe)):
+            errMsg = "missing a mandatory option (-d, -u, -l, -m, -r, -g, -c, --wizard, --shell, --purge, --list-tampers or --dependencies). "
             errMsg += "Use -h for basic and -hh for advanced help\n"
             parser.error(errMsg)
 

@@ -132,7 +132,6 @@ from lib.core.settings import UNKNOWN_DBMS_VERSION
 from lib.core.settings import URI_INJECTABLE_REGEX
 from lib.core.threads import getCurrentThreadData
 from lib.core.threads import setDaemon
-from lib.core.update import update
 from lib.parse.configfile import configFileParser
 from lib.parse.payloads import loadBoundaries
 from lib.parse.payloads import loadPayloads
