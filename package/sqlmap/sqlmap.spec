@@ -51,5 +51,5 @@ ln -s ../../..%{_sysconfdir}/sqlmap.conf .
 * Thu Nov 7 2024 Ghost <0x7ccghost@gmail.com> - 1.8.11.1-inari1
 - Initial package sqlmap 1.8.11 for Inari Linux
 
-* Thu Nov 12 2024 Ghost <0x7ccghost@gmail.com> - 1.8.11.2-inari1
+* Tue Nov 12 2024 Ghost <0x7ccghost@gmail.com> - 1.8.11.2-inari1
 - Use sqlmap 1.8.11 from tag release
