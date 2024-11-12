@@ -32,6 +32,10 @@ cd %{_datadir}/%{name}
 EOF
 chmod +x %{buildroot}%{_bindir}/sqlmap
 
+sed -i 's|/usr/bin/env python$|/usr/bin/python3|' %{buildroot}%{_datadir}/%{name}/*.py %{buildroot}%{_datadir}/%{name}/*/*/*.py
+sed -i 's|^#!/bin/bash$|#!/usr/bin/bash|' %{buildroot}%{_datadir}/%{name}/*.sh %{buildroot}%{_datadir}/%{name}/*/*/*.sh
+
+
 install -d -m 755 %{buildroot}%{_sysconfdir}
 install -m 644 sqlmap.conf %{buildroot}%{_sysconfdir}
 pushd %{buildroot}%{_datadir}/%{name}
