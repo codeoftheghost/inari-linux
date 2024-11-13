@@ -24,7 +24,6 @@ dnsrecon is a python-based tool for DNS reconnaissance and security assessments.
 install -d -m 775 %{buildroot}%{_datadir}/%{name}
 install -m 755 dnsrecon.py %{buildroot}%{_datadir}/%{name}
 cp -pr dnsrecon %{buildroot}%{_datadir}/%{name}
-cp -pr tests %{buildroot}%{_datadir}/%{name}
 cp -pr tools %{buildroot}%{_datadir}/%{name}
 
 install -d -m 755 %{buildroot}%{_bindir}
@@ -40,6 +39,7 @@ find %{buildroot}%{_datadir}/%{name} -type f -name "*.py" -exec sed -i 's|/usr/b
 %files
 %{_datadir}/%{name}
 %{_bindir}/%{name}
+%doc README.md License
 
 %changelog
 * Tue Nov 12 2024 Ghost <0x7ccghost@gmail.com> - 1.3.1.1-inari1
