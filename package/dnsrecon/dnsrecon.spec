@@ -7,14 +7,12 @@ License:        GPLv2
 URL:            https://github.com/darkoperator/dnsrecon.git
 Source0:        https://github.com/darkoperator/dnsrecon/archive/refs/tags/1.3.1.tar.gz
 BuildArch:      noarch
-BuildRequires:	python3-pytest >= 8.3.3
-BuildRequires:	ruff
-BuildRequires:	python3-setuptools
+Requires:       python3
 Requires:       python3-requests
-Requires:	python3-dns
-Requires:	python3-netaddr
-Requires:	python3-loguru
-Requires:	python3-lxml
+Requires:	    python3-dns
+Requires:	    python3-netaddr
+Requires:	    python3-loguru
+Requires:	    python3-lxml
 
 %description
 dnsrecon is a python-based tool for DNS reconnaissance and security assessments. It automates the collection of DNS records, zone transfers, subdomain enumeration, and cache snooping. Supporting various DNS test, dnsrecon helps reveal configuration vulnerabilities, and facilitates integration with other security tools through flexible output formats.
