@@ -6,9 +6,7 @@ Group:          Security/information-gathering
 License:        GPLv3
 URL:            https://netdiscover-scanner/netdiscover.git
 Source0:        https://github.com/netdiscover-scanner/netdiscover/archive/refs/tags/0.10.tar.gz
-BuildArch:      x86_64
 BuildRequires:  libpcap-devel
-Requires:	libpcap
 
 %description
 Nerdiscover is an active/passive address reconnaissance tool, mainly developed for those wireless networks without dhcp server, when you are wardriving. It can be also used on hub/switched networks.
